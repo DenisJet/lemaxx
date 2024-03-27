@@ -4,7 +4,7 @@
 }
 
 .intro {
-  background: url("/image/intro.png") no-repeat 50% 30% / cover;
+  background: url("/image/intro.png") no-repeat top right / cover;
 }
 
 .introContainer {

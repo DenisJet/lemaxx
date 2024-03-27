@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Button from '../components/Button/Button';
 import Form from '@/components/Form/Form';
 import Benefits from '@/components/Benefits/Benefits';
+import Zamer from '@/components/Zamer-1/Zamer-1';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -23,14 +24,7 @@ export default function Home() {
           </div>
         </section>
         <Benefits />
-        <section>
-          <h2>Бесплатный вызов замерщика</h2>
-          <p>
-            Вы получите бесплатно техническую консультацию, точный замер и расчет стоимости. Вам не придется тратить
-            время на посещение офиса.
-          </p>
-          <Form />
-        </section>
+        <Zamer />
         <section className={styles.advantages}>
           <h2>Почему LeMaxx</h2>
           <ul className={styles.advantagesList}>

@@ -1,0 +1,28 @@
+.zamer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.imageContainer {
+  border-left: 10px solid var(--black);
+}
+
+.image {
+  border-top: 10px solid var(--primary);
+  border-left: 10px solid var(--primary);
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.zamer h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0;
+}

@@ -16,6 +16,9 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.benefitsItem:not(:last-child) {
   border-bottom: 1px solid var(--light-gray);
 }
 
