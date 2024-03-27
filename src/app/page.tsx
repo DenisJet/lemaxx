@@ -6,6 +6,7 @@ import Form from '@/components/Form/Form';
 import Benefits from '@/components/Benefits/Benefits';
 import Zamer from '@/components/Zamer-1/Zamer-1';
 import Catalog from '@/components/Catalog/Catalog';
+import Advantages from '@/components/Advantages/Advantages';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -26,39 +27,7 @@ export default function Home() {
         <Benefits />
         <Zamer />
         <Catalog onClick={() => setModalActive(true)} />
-        <section className={styles.advantages}>
-          <h2>Почему LeMaxx</h2>
-          <ul className={styles.advantagesList}>
-            <li className={styles.advantagesItem}>
-              <h3 className={styles.advantagesTitle}>Большой опыт</h3>
-              <p className={styles.advantagesText}>
-                Знаем как качественно установить натяжной потолок в любом помещении
-              </p>
-            </li>
-            <li className={styles.advantagesItem}>
-              <h3 className={styles.advantagesTitle}>Профессиональный подход</h3>
-              <p className={styles.advantagesText}>
-                Используем качественные, сертифицированные материалы и профессиональный инструмент
-              </p>
-            </li>
-            <li className={styles.advantagesItem}>
-              <h3 className={styles.advantagesTitle}>Безопасный монтаж</h3>
-              <p className={styles.advantagesText}>Работаем с композитными взрывобезопасными баллонами</p>
-            </li>
-            <li className={styles.advantagesItem}>
-              <h3 className={styles.advantagesTitle}>Большой выбор</h3>
-              <p className={styles.advantagesText}>Есть варианты на любой бюджет, от эконом до премиум уровня</p>
-            </li>
-            <li className={styles.advantagesItem}>
-              <h3 className={styles.advantagesTitle}>Надёжность</h3>
-              <p className={styles.advantagesText}>Работаем по договору и фиксированному прайсу, с соблюдение сроков</p>
-            </li>
-            <li className={styles.advantagesItem}>
-              <h3 className={styles.advantagesTitle}>Гарантия</h3>
-              <p className={styles.advantagesText}>Даём гарантию на все работы и материалы до 15 лет</p>
-            </li>
-          </ul>
-        </section>
+        <Advantages />
         <section id='gallery'>
           <h2>Примеры работ</h2>
         </section>

@@ -4,6 +4,7 @@
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .catalog h2 {
@@ -28,6 +29,7 @@
   .catalog {
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 80px;
   }
 
   .catalog h2 {
