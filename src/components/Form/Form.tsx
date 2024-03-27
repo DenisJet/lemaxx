@@ -33,7 +33,9 @@ export default function Form() {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
-      <Button type='submit'>Отправить</Button>
+      <Button type='submit' bgColor='black'>
+        Отправить
+      </Button>
     </form>
   );
 }

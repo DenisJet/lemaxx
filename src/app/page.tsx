@@ -16,7 +16,7 @@ export default function Home() {
         <section className={styles.intro}>
           <div className={styles.introContainer}>
             <h1>
-              Натяжные потолки в <span>Сатке</span> под ключ
+              Натяжные потолки <span>в Сатке под ключ</span>
             </h1>
             <p>Натяжные потолки любых видов и сложности.</p>
             <p>Поможем с выбором идеального варианта!</p>

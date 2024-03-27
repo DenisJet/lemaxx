@@ -5,11 +5,14 @@ interface ButtonProps {
   children: ReactNode;
   onClick?: () => void;
   type: 'submit' | 'reset' | 'button' | undefined;
+  bgColor?: 'primary' | 'black';
 }
 
-export default function Button({ children, onClick, type }: ButtonProps): JSX.Element {
+export default function Button({ children, onClick, type, bgColor = 'primary' }: ButtonProps): JSX.Element {
+  const isBlack = bgColor === 'black' ? true : false;
+
   return (
-    <button className={styles.button} onClick={onClick} type={type}>
+    <button className={isBlack ? `${styles.button} ${styles.black}` : styles.button} onClick={onClick} type={type}>
       {children}{' '}
       <svg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path
