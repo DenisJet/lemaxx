@@ -1,4 +1,43 @@
 .main {
-  padding-top: 75px;
+  padding-top: 50px;
   min-height: 100vh;
+}
+
+.intro {
+  background: url("/image/intro.png") no-repeat 50% 30% / cover;
+}
+
+.introContainer {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 40px 10px 40px 10px;
+}
+
+.introContainer h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.introContainer span {
+  color: var(--primary);
+}
+
+.introContainer p {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (width >= 700px) {
+  .introContainer {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .introContainer h1 {
+    font-size: 42px;
+  }
+
+  .introContainer p {
+    font-size: 24px;
+  }
 }

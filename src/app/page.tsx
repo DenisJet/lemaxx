@@ -4,6 +4,7 @@ import Modal from '../components/Modal/Modal';
 import { useState } from 'react';
 import Button from '../components/Button/Button';
 import Form from '@/components/Form/Form';
+import Benefits from '@/components/Benefits/Benefits';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -12,14 +13,16 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <section className={styles.intro}>
-          <h1>Натяжные потолки в Сатке под ключ</h1>
-          <ul>
-            <li>Все виды фактур и цветов</li>
-            <li>Работаем с любым интерьером и бюджетом</li>
-            <li>Гипоаллергенные полотна без запаха</li>
-            <li>Гарантия на работы и материалы до 15 лет</li>
-          </ul>
+          <div className={styles.introContainer}>
+            <h1>
+              Натяжные потолки в <span>Сатке</span> под ключ
+            </h1>
+            <p>Натяжные потолки любых видов и сложности.</p>
+            <p>Поможем с выбором идеального варианта!</p>
+            <p>Качественные материалы. Опытные мастера!</p>
+          </div>
         </section>
+        <Benefits />
         <section>
           <h2>Бесплатный вызов замерщика</h2>
           <p>
