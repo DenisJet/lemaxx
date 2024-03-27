@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import Modal from '../components/Modal/Modal';
 import { useState } from 'react';
 import Button from '../components/Button/Button';
+import Form from '@/components/Form/Form';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -19,15 +20,14 @@ export default function Home() {
             <li>Гарантия на работы и материалы до 15 лет</li>
           </ul>
         </section>
-        <form action=''>
+        <section>
           <h2>Бесплатный вызов замерщика</h2>
           <p>
             Вы получите бесплатно техническую консультацию, точный замер и расчет стоимости. Вам не придется тратить
             время на посещение офиса.
           </p>
-          <input type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
-          <button type='submit'>Отправить</button>
-        </form>
+          <Form />
+        </section>
         <section className={styles.advantages}>
           <h2>Почему LeMaxx</h2>
           <ul className={styles.advantagesList}>
@@ -120,12 +120,11 @@ export default function Home() {
             натянутого полотна, если вас затопили сверху – мастера сольют воду и просушат потолок.
           </p>
         </section>
-        <form action=''>
+        <section>
           <h2>Остались вопросы?</h2>
           <p>Оставьте свой номер телефона и Вы получите бесплатно техническую консультацию.</p>
-          <input type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
-          <button type='submit'>Отправить</button>
-        </form>
+          <Form />
+        </section>
         <footer>Footer</footer>
       </main>
       <Modal active={modalActive} setActive={setModalActive} />
