@@ -1,0 +1,19 @@
+.catalog {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.catalog h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalogText {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 40px;
+}

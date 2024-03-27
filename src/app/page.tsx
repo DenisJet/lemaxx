@@ -6,6 +6,7 @@ import Button from '../components/Button/Button';
 import Form from '@/components/Form/Form';
 import Benefits from '@/components/Benefits/Benefits';
 import Zamer from '@/components/Zamer-1/Zamer-1';
+import Catalog from '@/components/Catalog/Catalog';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -25,6 +26,7 @@ export default function Home() {
         </section>
         <Benefits />
         <Zamer />
+        <Catalog onClick={() => setModalActive(true)} />
         <section className={styles.advantages}>
           <h2>Почему LeMaxx</h2>
           <ul className={styles.advantagesList}>
@@ -55,46 +57,6 @@ export default function Home() {
             <li className={styles.advantagesItem}>
               <h3 className={styles.advantagesTitle}>Гарантия</h3>
               <p className={styles.advantagesText}>Даём гарантию на все работы и материалы до 15 лет</p>
-            </li>
-          </ul>
-        </section>
-        <section id='price' className={styles.price}>
-          <h2>Каталог</h2>
-          <ul>
-            <li>
-              <h3>Матовые</h3>
-              <p>
-                Матовая поверхность не обладает зеркальным эффектом. Она не «слепит» глаза и не отражает предметов,
-                размещенных в помещении.
-              </p>
-              <p>Цена от 199 ₽/м2</p>
-              <Button onClick={() => setModalActive(true)} type='button'>
-                Заказать
-              </Button>
-            </li>
-            <li>
-              <h3>Глянцевые</h3>
-              <p>
-                Покрытие обладает светоотражающей, зеркальной поверхностью. Создается эффект расширения пространства.
-                Помещение становится светлым и уютным.
-              </p>
-              <p>Цена от 249 ₽/м2</p>
-              <button type='button'>Заказать</button>
-            </li>
-            <li>
-              <h3>Двухуровневые</h3>
-              <p>
-                Эксклюзивные, двухуровневые натяжные потолки по выгодной цене с гарантией. Мы производим монтаж любой
-                сложности.
-              </p>
-              <p>Цена от 2000 ₽/м2</p>
-              <button type='button'>Заказать</button>
-            </li>
-            <li>
-              <h3>С фотопечатью</h3>
-              <p>Уникальные натяжные потолки с индивидуальным дизайном в виде узора, изображения или орнамента.</p>
-              <p>Цена от 1500 ₽/м2</p>
-              <button type='button'>Заказать</button>
             </li>
           </ul>
         </section>
