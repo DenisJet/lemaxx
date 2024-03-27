@@ -11,6 +11,7 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.5s;
+  z-index: 4;
 }
 
 .modal.active {
@@ -19,14 +20,24 @@
 }
 
 .modalContent {
-  pad: 10px;
-  background-color: var(--white);
+  padding: 15px;
+  color: var(--white);
+  background-color: var(--primary);
   width: 300px;
-  height: 300px;
+  height: 230px;
   transform: scale(0.5);
   transition: 0.4s all;
 }
 
 .modalContent.active {
   transform: scale(1);
+}
+
+.modalContent p {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
