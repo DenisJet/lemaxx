@@ -16,10 +16,8 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.benefitsItem:not(:last-child) {
-  border-bottom: 1px solid var(--light-gray);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .benefitsItem::before {
@@ -30,17 +28,16 @@
 }
 
 @media screen and (width >= 700px) {
-  .benefits {
-    border-bottom: 1px solid var(--light-gray);
-  }
 
   .benefitsList {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .benefitsItem {
-    border-bottom: none;
+    font-size: 16px;
   }
 }
 

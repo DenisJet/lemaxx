@@ -1,6 +1,8 @@
 import axios from 'axios';
+import styles from './Form.module.css';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
+import Button from '../Button/Button';
 
 export default function Form() {
   const phoneRef = useRef<HTMLInputElement>(null);
@@ -29,11 +31,9 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
-      <button onSubmit={handleSubmit} type='submit'>
-        Отправить
-      </button>
+      <Button type='submit'>Отправить</Button>
     </form>
   );
 }

@@ -1,18 +1,31 @@
 .zamer {
   padding-left: 10px;
   padding-right: 10px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zamerContainer {
+  background-color: var(--light-gray);
+  padding: 15px 10px;
 }
 
 .imageContainer {
   border-left: 10px solid var(--black);
+  width: 100%;
 }
 
 .image {
   border-top: 10px solid var(--primary);
   border-left: 10px solid var(--primary);
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
 }
 
 .title {
+  margin-top: 0;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 24px;
@@ -25,4 +38,54 @@
   font-weight: 600;
   font-size: 18px;
   margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.zamer p {
+  font-size: 13px;
+  color: var(--gray);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media screen and (width >= 700px) {
+  .zamer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .image {
+    max-height: 400px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  
+  .zamer h3 {
+    font-size: 24px;
+  }
+  
+  .zamer p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width >= 1000px) {
+  .zamer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image {
+    max-height: auto;
+    height: 100%;
+  }
+
+  .zamerContainer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }

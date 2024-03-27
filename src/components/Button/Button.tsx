@@ -1,14 +1,15 @@
-import { ReactNode } from 'react';
+import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
 import styles from './Button.module.css';
 
 interface ButtonProps {
   children: ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
+  type: 'submit' | 'reset' | 'button' | undefined;
 }
 
-export default function Button({ children, onClick }: ButtonProps): JSX.Element {
+export default function Button({ children, onClick, type }: ButtonProps): JSX.Element {
   return (
-    <button className={styles.button} onClick={onClick} type='button'>
+    <button className={styles.button} onClick={onClick} type={type}>
       {children}{' '}
       <svg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path
