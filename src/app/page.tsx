@@ -2,7 +2,6 @@
 import styles from './page.module.css';
 import Modal from '../components/Modal/Modal';
 import { useState } from 'react';
-import Button from '../components/Button/Button';
 import Form from '@/components/Form/Form';
 import Benefits from '@/components/Benefits/Benefits';
 import Zamer from '@/components/Zamer-1/Zamer-1';

@@ -1,6 +1,9 @@
 .catalog {
   padding-left: 10px;
   padding-right: 10px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catalog h2 {
@@ -16,4 +19,22 @@
   text-align: center;
   color: var(--gray);
   margin-bottom: 40px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (width >= 700px) {
+  .catalog {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .catalog h2 {
+    font-size: 36px;
+  }
+
+  .catalogText {
+    font-size: 16px;
+  }
 }
