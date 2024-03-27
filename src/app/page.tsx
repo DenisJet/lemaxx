@@ -68,7 +68,9 @@ export default function Home() {
                 размещенных в помещении.
               </p>
               <p>Цена от 199 ₽/м2</p>
-              <Button onClick={() => setModalActive(true)}>Заказать</Button>
+              <Button onClick={() => setModalActive(true)} type='button'>
+                Заказать
+              </Button>
             </li>
             <li>
               <h3>Глянцевые</h3>
