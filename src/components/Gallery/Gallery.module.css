@@ -1,6 +1,11 @@
+
 .gallery {
   padding-left: 10px;
   padding-right: 10px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
 }
 
 .gallery h2 {
@@ -16,12 +21,27 @@
   max-width: 550px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.imageContainer {
+  width: 250px;
+  height: 250px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: auto;
+  cursor: grab;
 }
 
 @media screen and (width >= 700px) {
   .gallery {
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 100px;
   }
 
   .gallery h2 {
