@@ -2,13 +2,13 @@
 import styles from './page.module.css';
 import Modal from '../components/Modal/Modal';
 import { useState } from 'react';
-import Form from '@/components/Form/Form';
 import Benefits from '@/components/Benefits/Benefits';
 import Zamer from '@/components/Zamer-1/Zamer-1';
 import Catalog from '@/components/Catalog/Catalog';
 import Advantages from '@/components/Advantages/Advantages';
 import Gallery from '@/components/Gallery/Gallery';
 import About from '@/components/About/About';
+import Zamer2 from '@/components/Zamer-2/Zamer-2';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -30,14 +30,9 @@ export default function Home() {
         <Zamer />
         <Catalog onClick={() => setModalActive(true)} />
         <Advantages />
-        <Gallery />
         <About />
-        <section>
-          <h2>Остались вопросы?</h2>
-          <p>Оставьте свой номер телефона и Вы получите бесплатно техническую консультацию.</p>
-          <Form />
-        </section>
-        <footer>Footer</footer>
+        <Gallery />
+        <Zamer2 />
       </main>
       <Modal active={modalActive} setActive={setModalActive} />
     </>

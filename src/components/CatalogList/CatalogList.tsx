@@ -54,7 +54,7 @@ export default function CatalogList({ onClick }: CatalogProps): JSX.Element {
   return (
     <ul className={styles.list}>
       {products.map((product) => (
-        <li>
+        <li key={product.id}>
           <CatalogCard
             id={product.id}
             title={product.title}
