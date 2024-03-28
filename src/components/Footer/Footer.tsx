@@ -6,6 +6,7 @@ export default function Footer(): JSX.Element {
     <footer className={styles.footer} id='contacts'>
       <Link className={styles.logo} href='/'>
         <span>Le</span>Maxx
+        <small>Натяжные потолки</small>
       </Link>
       <nav className={styles.nav}>
         <Link className={styles.navLink} href='/#price'>

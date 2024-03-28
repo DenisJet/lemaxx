@@ -35,6 +35,7 @@ export default function Header(): JSX.Element {
       <div className={styles.headerContainer}>
         <Link className={styles.logo} href='/' onClick={() => setIsOpened(false)}>
           <span>Le</span>Maxx
+          <small>Натяжные потолки</small>
         </Link>
         <nav className={styles.nav}>
           <Link className={styles.navLink} href='/#price'>
