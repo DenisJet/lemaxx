@@ -4,7 +4,11 @@ import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import Button from '../Button/Button';
 
-export default function Form() {
+interface FormProps {
+  buttonColor?: 'primary' | 'black';
+}
+
+export default function Form({ buttonColor = 'black' }: FormProps) {
   const phoneRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
@@ -33,7 +37,7 @@ export default function Form() {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
-      <Button type='submit' bgColor='black'>
+      <Button type='submit' bgColor={buttonColor}>
         Отправить
       </Button>
     </form>

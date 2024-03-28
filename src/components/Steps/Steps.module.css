@@ -1,0 +1,208 @@
+.steps {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.steps h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tabsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tabsItem {
+  background-color: var(--light-gray);
+  border-left: 3px solid var(--gray);
+  padding: 18px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.tabsItem.activeItem {
+  border-left: 3px solid var(--primary);
+}
+
+.tabsNumber {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.tabsNumber.activeNumber {
+  color: var(--primary);
+}
+
+.tabsText {
+  font-size: 14px;
+  margin: 0;
+}
+
+.contentTitle {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.contentText {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.contentList {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid var(--input-color);
+  border-bottom: 1px solid var(--input-color);
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contentItem {
+  font-size: 14px;
+}
+
+.contentItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: var(--gray)
+}
+
+.imageContainer {
+  display: none;
+  width: 484px;
+  height: auto;
+}
+
+.imageContainer.first {
+  background: url("/image/first.png") no-repeat center / cover var(--light-gray);
+}
+
+.imageContainer.second {
+  background: url("/image/second.png") no-repeat center / cover var(--light-gray);
+}
+
+.imageContainer.thres {
+  background: url("/image/thres.png") no-repeat center / cover var(--light-gray);
+}
+
+.imageContainer.fours {
+  background: url("/image/fours.png") no-repeat center / cover var(--light-gray);
+}
+
+@media screen and (width >= 700px) {
+  .steps {
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-bottom: 80px;
+  }
+
+  .steps h2 {
+    font-size: 36px;
+  }
+
+  .tabsItem {
+    padding: 40px 20px;
+  }
+
+  .tabsNumber {
+    font-size: 24px;
+  }
+
+  .tabsText {
+    font-size: 16px;
+  }
+
+  .contentTitle {
+    font-size: 24px;
+  }
+
+  .contentText {
+    font-size: 16px;
+  }
+
+  .contentItem {
+    font-size: 16px;
+  }
+
+  .formContainer {
+    padding: 20px;
+  }
+
+  .contentContainer {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (width >= 900px) {
+  .tabsItem:hover {
+    opacity: 0.4;
+  }
+  
+  .tabsItem:active {
+    opacity: 0.9;
+  }
+
+  .tabsList {
+    grid-template-columns: 1fr;
+  }
+
+  .stepsContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .formContainer {
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (width >= 1240px) {
+  .stepsContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0;
+  }
+
+  .contentCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  .contentContainer {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .formContainer {
+    margin-top: 143px;
+  }
+
+  .imageContainer {
+    display: block;
+  }
+}
