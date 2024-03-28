@@ -1,6 +1,7 @@
 .advantages {
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 60px;
 }
 
 .advantages h2 {
@@ -92,6 +93,7 @@
   .advantages {
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 80px;
   }
 
   .advantages h2 {

@@ -7,6 +7,7 @@ import Benefits from '@/components/Benefits/Benefits';
 import Zamer from '@/components/Zamer-1/Zamer-1';
 import Catalog from '@/components/Catalog/Catalog';
 import Advantages from '@/components/Advantages/Advantages';
+import Gallery from '@/components/Gallery/Gallery';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -28,9 +29,7 @@ export default function Home() {
         <Zamer />
         <Catalog onClick={() => setModalActive(true)} />
         <Advantages />
-        <section id='gallery'>
-          <h2>Примеры работ</h2>
-        </section>
+        <Gallery />
         <section id='about'>
           <h2>О компании</h2>
           <p>
