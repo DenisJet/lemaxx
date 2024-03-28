@@ -69,6 +69,10 @@
   margin-bottom: 10px;
 }
 
+.tel:hover {
+  text-decoration: underline;
+}
+
 .tel svg {
   margin-right: 10px;
 }

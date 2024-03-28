@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 const canonicalUrl = `https://lemaxx.ru`;
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
