@@ -38,16 +38,16 @@ export default function Header(): JSX.Element {
           <small>Натяжные потолки</small>
         </Link>
         <nav className={styles.nav}>
-          <Link className={styles.navLink} href='/#price'>
+          <Link className={styles.navLink} href='#price'>
             Цены
           </Link>
-          <Link className={styles.navLink} href='/#gallery'>
+          <Link className={styles.navLink} href='#gallery'>
             Галерея
           </Link>
-          <Link className={styles.navLink} href='/#about'>
+          <Link className={styles.navLink} href='#about'>
             О компании
           </Link>
-          <Link className={styles.navLink} href='/#contacts'>
+          <Link className={styles.navLink} href='#contacts'>
             Контакты
           </Link>
           <Link className={styles.tel} href='tel:+79194807070'>
@@ -64,16 +64,16 @@ export default function Header(): JSX.Element {
         </nav>
         {isOpened ? (
           <nav ref={ref} className={styles.navMobile}>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/#price'>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='#price'>
               Цены
             </Link>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/#gallery'>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='#gallery'>
               Галерея
             </Link>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/#about'>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='#about'>
               О компании
             </Link>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/#contacts'>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='#contacts'>
               Контакты
             </Link>
             <Link className={styles.tel} href='tel:+79194807070' onClick={() => setIsOpened(false)}>

@@ -9,16 +9,16 @@ export default function Footer(): JSX.Element {
         <small>Натяжные потолки</small>
       </Link>
       <nav className={styles.nav}>
-        <Link className={styles.navLink} href='/#price'>
+        <Link className={styles.navLink} href='#price'>
           Цены
         </Link>
-        <Link className={styles.navLink} href='/#gallery'>
+        <Link className={styles.navLink} href='#gallery'>
           Галерея
         </Link>
-        <Link className={styles.navLink} href='/#about'>
+        <Link className={styles.navLink} href='#about'>
           О компании
         </Link>
-        <Link className={styles.navLink} href='/#contacts'>
+        <Link className={styles.navLink} href='#contacts'>
           Контакты
         </Link>
         <Link className={styles.tel} href='tel:+79194807070'>
