@@ -2,7 +2,7 @@ import styles from './About.module.css';
 
 export default function About(): JSX.Element {
   return (
-    <section id={'about'} className={styles.about}>
+    <section id='about' className={styles.about}>
       <div className={styles.photoContainer}>
         <img className={styles.photo} src='/image/photo.png' alt='фото' />
       </div>

@@ -23,11 +23,7 @@ export default function RootLayout({
       <head>
         <link rel='canonical' key='canonical' href={canonicalUrl} />
       </head>
-      <body className={montserrat.className}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }

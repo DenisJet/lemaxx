@@ -10,12 +10,15 @@ import Gallery from '@/components/Gallery/Gallery';
 import About from '@/components/About/About';
 import Zamer2 from '@/components/Zamer-2/Zamer-2';
 import Steps from '@/components/Steps/Steps';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
 
   return (
     <>
+      <Header />
       <main className={styles.main}>
         <section className={styles.intro}>
           <div className={styles.introContainer}>
@@ -36,6 +39,7 @@ export default function Home() {
         <Gallery />
         <Zamer2 />
       </main>
+      <Footer />
       <Modal active={modalActive} setActive={setModalActive} />
     </>
   );

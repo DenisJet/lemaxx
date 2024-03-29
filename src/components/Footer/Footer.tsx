@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer(): JSX.Element {
   return (
-    <footer className={styles.footer} id={'contacts'}>
+    <footer className={styles.footer} id='contacts'>
       <Link className={styles.logo} href='/'>
         <span>Le</span>Maxx
         <small>Натяжные потолки</small>
