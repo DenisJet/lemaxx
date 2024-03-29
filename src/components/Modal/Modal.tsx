@@ -24,7 +24,7 @@ export default function Modal({ active, setActive }: ModalProps): JSX.Element {
             ></path>
           </svg>
         </button>
-        <p>Отправте свой номер телефона и мы перезвоним Вам в ближайшее время</p>
+        <p>Отправьте свой номер телефона и мы перезвоним Вам в ближайшее время</p>
         <Form />
       </div>
     </div>
