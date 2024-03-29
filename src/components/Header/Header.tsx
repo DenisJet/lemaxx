@@ -93,22 +93,24 @@ export default function Header(): JSX.Element {
         )}
         {isOpened ? (
           <button className={styles.button} type='button' title='close menu' onClick={handleButtonClick}>
-            <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'>
               <path
-                d='M2.06058 0.807579C1.86532 0.612317 1.54874 0.612317 1.35348 0.807579C1.15822 1.00284 1.15822 1.31942 1.35348 1.51469L2.06058 0.807579ZM1.35348 1.51469L19.0311 19.1924L19.7383 18.4852L2.06058 0.807579L1.35348 1.51469Z'
+                fillRule='evenodd'
+                clipRule='evenodd'
+                d='M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z'
                 fill='#242C3C'
-              />
-              <path
-                d='M1.35362 19.1924C1.15836 19.3876 0.841774 19.3876 0.646512 19.1924C0.45125 18.9971 0.45125 18.6805 0.646512 18.4852L1.35362 19.1924ZM19.0313 1.51469L1.35362 19.1924L0.646512 18.4852L18.3242 0.807579L19.0313 1.51469Z'
-                fill='#242C3C'
-              />
+              ></path>
             </svg>
           </button>
         ) : (
           <button className={styles.button} type='button' title='open menu' onClick={handleButtonClick}>
-            <svg width='25' height='11' viewBox='0 0 25 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <line y1='0.5' x2='25' y2='0.5' stroke='#242C3C' />
-              <line y1='10.5' x2='25' y2='10.5' stroke='#242C3C' />
+            <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'>
+              <path
+                fillRule='evenodd'
+                clipRule='evenodd'
+                d='M1.016 3.05h14v2h-14v-2zm0 4h14v2h-14v-2zm14 4h-14v2h14v-2z'
+                fill='#242C3C'
+              ></path>
             </svg>
           </button>
         )}

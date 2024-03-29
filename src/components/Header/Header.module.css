@@ -42,8 +42,8 @@
 
 .button {
   position: absolute;
-  right: 10px;
-  top: 0;
+  right: 15px;
+  top: -5px;
   border: none;
   background-color: transparent;
   cursor: pointer;
