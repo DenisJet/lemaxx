@@ -3,7 +3,7 @@ import Form from '../Form/Form';
 import styles from './Steps.module.css';
 
 export default function Steps(): JSX.Element {
-  const [tab, setTab] = useState(4);
+  const [tab, setTab] = useState(1);
 
   return (
     <section className={styles.steps}>
