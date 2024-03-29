@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang='ru'>
       <head>
         <link rel='canonical' key='canonical' href={canonicalUrl} />
+        <link rel='icon' href='/favicon.ico' sizes='any' />
       </head>
       <body className={montserrat.className}>{children}</body>
     </html>
