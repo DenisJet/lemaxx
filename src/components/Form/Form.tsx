@@ -39,7 +39,7 @@ export default function Form({ buttonColor = 'black' }: FormProps) {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <input ref={nameRef} type='text' name='name' placeholder='Ваше имя' />
-      <input ref={phoneRef} type='tel' name='number' placeholder='8 919 480 70 70' pattern='[0-9]{11}' required />
+      <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер' pattern='[0-9]{11}' required />
       <Button type='submit' bgColor={buttonColor}>
         Отправить
       </Button>
