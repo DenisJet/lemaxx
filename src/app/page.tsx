@@ -12,6 +12,7 @@ import Zamer2 from '@/components/Zamer-2/Zamer-2';
 import Steps from '@/components/Steps/Steps';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import MobileButton from '@/components/MobileButton/MobileButton';
 
 const canonicalUrl = `https://lemaxx.ru`;
 
@@ -56,6 +57,7 @@ export default function Home() {
         <Zamer2 />
       </main>
       <Footer />
+      <MobileButton />
       <Modal active={modalActive} setActive={setModalActive} />
     </>
   );
