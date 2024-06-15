@@ -32,7 +32,7 @@ export default function Home() {
         <meta property='og:site_name' content='LeMaxx - натяжные потолки' />
         <meta property='og:url' content='https://le-maxx.ru/' />
         <meta property='og:locale' content='ru' />
-        <meta property='og:image' content='img/logo.png' />
+        <meta property='og:image' content='favicon.ico' />
       </head>
       <Header />
       <main className={styles.main}>
