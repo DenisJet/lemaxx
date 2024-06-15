@@ -10,6 +10,7 @@ interface FormProps {
 
 export default function Form({ buttonColor = 'black' }: FormProps) {
   const phoneRef = useRef<HTMLInputElement>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
   const TOKEN = '7131971170:AAHhIM0GnxoXfWdtM-uL8B3jqrJI8AuxyBA';
@@ -19,6 +20,7 @@ export default function Form({ buttonColor = 'black' }: FormProps) {
   const handleSubmit = (evt: { preventDefault: () => void }) => {
     evt.preventDefault();
     let message = `<b>Заявка с сайта LeMaxx</b>\n`;
+    message += `<b>Имя: </b> ${nameRef.current?.value}\n`;
     message += `<b>Номер телефона: </b> ${phoneRef.current?.value}\n`;
 
     axios
@@ -36,6 +38,7 @@ export default function Form({ buttonColor = 'black' }: FormProps) {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
+      <input ref={nameRef} type='text' name='name' placeholder='Ваше имя' />
       <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
       <Button type='submit' bgColor={buttonColor}>
         Отправить
