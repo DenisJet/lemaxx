@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
+import { Suspense } from 'react';
+import { YandexMetrika } from '@/components/Metrika/YandexMetrika';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
-const canonicalUrl = `https://lemaxx.ru`;
 
 export const metadata: Metadata = {
   title: 'LeMaxx - Натяжные потолки Сатка и область, заказать, цены.',
@@ -19,10 +20,14 @@ export default function RootLayout({
   return (
     <html lang='ru'>
       <head>
-        <link rel='canonical' key='canonical' href={canonicalUrl} />
         <link rel='icon' href='/favicon.ico' sizes='any' />
       </head>
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <Suspense>
+          <YandexMetrika />
+        </Suspense>
+        {children}
+      </body>
     </html>
   );
 }

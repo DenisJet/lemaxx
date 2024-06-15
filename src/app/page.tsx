@@ -13,11 +13,27 @@ import Steps from '@/components/Steps/Steps';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 
+const canonicalUrl = `https://lemaxx.ru`;
+
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
 
   return (
     <>
+      <head>
+        <link rel='canonical' key='canonical' href={canonicalUrl} />
+        <meta name='robots' content='index, follow' />
+        <meta property='og:title' content='LeMaxx - Натяжные потолки Сатка и область, заказать, цены.' />
+        <meta
+          property='og:description'
+          content='Профессиональная установка натяжных потолков под ключ, в Сатке. Цены и стоимость монтажа натяжных потолков. Отзывы и фото натяжных потолков. Купить, вызвать, заказать монтаж натяжных потолков.'
+        />
+        <meta property='og:type' content='website' />
+        <meta property='og:site_name' content='LeMaxx - натяжные потолки' />
+        <meta property='og:url' content='https://le-maxx.ru/' />
+        <meta property='og:locale' content='ru' />
+        <meta property='og:image' content='img/logo.png' />
+      </head>
       <Header />
       <main className={styles.main}>
         <section className={styles.intro}>
