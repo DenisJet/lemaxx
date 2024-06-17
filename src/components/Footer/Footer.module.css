@@ -63,6 +63,17 @@
   text-decoration: underline;
 }
 
+.textContainer {
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
 @media screen and (width >= 900px) {
   .footer {
     flex-direction: row;

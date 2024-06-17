@@ -4,10 +4,14 @@ import Link from 'next/link';
 export default function Footer(): JSX.Element {
   return (
     <footer className={styles.footer} id='contacts'>
-      <Link className={styles.logo} href='/'>
-        <span>Le</span>Maxx
-        <small>Натяжные потолки</small>
-      </Link>
+      <div className={styles.textContainer}>
+        <Link className={styles.logo} href='/'>
+          <span>Le</span>Maxx
+          <small>Натяжные потолки</small>
+        </Link>
+        <p className={styles.text}>ИП Лемешкова Н.В.</p>
+        <p className={styles.text}>г Сатка, ул Пролетарская, д 38</p>
+      </div>
       <nav className={styles.nav}>
         <Link className={styles.navLink} href='#price'>
           Цены
